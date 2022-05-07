@@ -1,0 +1,21 @@
+
+{
+    "manifest_version": 2,
+  
+    "name": "NotionHelper",
+    "version": "1.0.0",
+    "description": "Helps with Notion",
+  
+    "content_scripts": [
+      {
+        "js": ["app.js"],
+        "matches": ["http://*/*", "https://*/*"]
+      }
+    ],
+    "browser_action": {
+      "default_title": "NotionHelper",
+      "default_popup": "index.html"
+    },
+  
+    "permissions": ["storage"]
+}
